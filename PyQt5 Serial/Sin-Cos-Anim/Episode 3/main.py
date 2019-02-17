@@ -7,14 +7,12 @@ class MainWindow(QMainWindow):
         super().__init__(parent=parent)
         
         self.resize(1218, 722)
-        # self.setStyleSheet("""#centralwidget {
-            # background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(87, 255, 140, 255), stop:1 rgba(117, 210, 255, 255));
-            # }"""
-        # )
+        self.setStyleSheet("""#centralwidget {
+            background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(87, 255, 140, 255), stop:1 rgba(117, 210, 255, 255));
+            }"""
+        )
         
-        # MainWindow.setObjectName("MainWindow")
         self.centralwidget = QtWidgets.QWidget(self)
-        self.centralwidget.setStyleSheet("")
         self.centralwidget.setObjectName("centralwidget")
         
         self.button = QtWidgets.QPushButton(self.centralwidget)
