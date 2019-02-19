@@ -41,7 +41,7 @@ class CanvasRenderer(FigureCanvas):
         self.drawStaticImgae()
         
     def drawStaticImgae(self):
-
+    
         # 插入資料
         self.X = np.linspace(0, 20, 100)
         self.Y = np.sin(self.X)
